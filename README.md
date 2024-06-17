@@ -1,5 +1,5 @@
 ## Introduction
-
+  As a widely used loss function in deep face recognition, the softmax loss cannot guarantee that the minimum positive sample-to-class similarity is larger than the maximum negative sample-to-class similarity. As a result, no unified threshold is available to separate positive sample-to-class pairs from negative sample-to-class pairs. To bridge this gap, we design a UCE (Unified Cross-Entropy) loss for face recognition model training, which is built on the vital constraint that all the positive sample-to-class similarities shall be larger than the negative ones. Our UCE loss can be integrated with margins for a further performance boost. The face recognition model trained with the proposed UCE loss, UniFace, was ntensively evaluated using a number of popular public datasets like MFR, IJB-C, LFW, CFPFP, AgeDB, and MegaFace. Experimental results show that our approach outperforms SOTA methods like SphereFace, CosFace, ArcFace, Partial FC, etc. Especially, till the submission of this work (Mar. 8, 2023), the proposed UniFace achieves the highest TAR@MR-All on the academic track of the MFR-ongoing challenge. 
 ## Demo Video
 
 
@@ -29,21 +29,6 @@
     python pytorch2onnx.py
     zip model.zip model.onnx
     ```
-    Upload model.zip to [MFR Ongoing](http://iccv21-mfr.com/#/leaderboard/academic) and then wait for the results.
+ 
 
-    We provide a pre-trained model (ResNet-50) on [Google Drive](https://drive.google.com/file/d/1vXZBy_NSG5-jtvsHkoeFVeaepRRE5Mo5/view?usp=drive_link) for easy and direct development. This model is trained on CASIA-WebFace and achieved 48.42% on MR-All and 99.56% on LFW.
 
-## Citation
-
-If you find **UniFace** useful in your research, please consider to cite:
-
-  ```bibtex
-  @InProceedings{Zhou_2023_ICCV,
-    author    = {Zhou, Jiancan and Jia, Xi and Li, Qiufu and Shen, Linlin and Duan, Jinming},
-    title     = {UniFace: Unified Cross-Entropy Loss for Deep Face Recognition},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {20730-20739}
-  }
-  ```
