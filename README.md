@@ -4,6 +4,10 @@
 
 
 
+https://github.com/weXiaolo/UniFace-Unified-Cross-Entropy-Loss-for-Deep-Face-Recognition/assets/74287249/05d8549e-8c4b-48cb-bacb-e00ae447eedc
+
+
+
 ## Get started
 
 **Requirement: [PyTorch](https://pytorch.org/get-started/previous-versions/) >= 1.8.1**
